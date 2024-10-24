@@ -569,13 +569,14 @@ for draw = 1:nrepli
       end
 
       %% NFXP
-      tStart_NFXP = tic; 
-      [ theta_NFXP ] =...
-          nfxpdygam(aobs, sobs, aobs_1, sval, ptrans, theta0, v0, disfact, miniter, maxiter);
-      time_nfxp(draw,1)=toc(tStart_NFXP);
-
-      bmat_nfxp(draw,:)=theta_NFXP';
-
+      if run_nfxp_spec==1
+          tStart_NFXP = tic; 
+          [ theta_NFXP ] =...
+              nfxpdygam(aobs, sobs, aobs_1, sval, ptrans, theta0, v0, disfact, miniter, maxiter);
+          time_nfxp(draw,1)=toc(tStart_NFXP);
+    
+          bmat_nfxp(draw,:)=theta_NFXP';
+      end
       
       
 
