@@ -1,12 +1,15 @@
 # Replication code of "Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm" (Fukasawa, 2024)
 
-This repository contains replication codes of the paper titled "Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm" by Takeshi Fukasawa, proposing a novel and simple procedure to compute EPL estimator without coding Jacobians of the equilibrium constraint. 
+This repository contains the replication code of the paper titled "Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm" by Takeshi Fukasawa, proposing a novel and simple procedure to compute the EPL estimator proposed by Dearing and Blevins (2024) without coding Jacobians of the equilibrium constraint. 
 
-We can run the numerical experiments by running the code mc_main.m.
+The code is based on the replication code of Dearing and Blevins (2024). In the code, we can validate the performance of the proposed Jacobian-free method in the setting first considered in Aguirregabiria and Mira (2007).
+
+We can run all the numerical experiments shown in the paper by running mc_main.m in "mc-am2007" folder.
 
 ## References
-* Berry, S., Levinsohn, J., & Pakes, A. (1995). Automobile Prices in Market Equilibrium. Econometrica, 63(4), 841-890.
-* Berry, S., Levinsohn, J., & Pakes, A. (1999). Voluntary export restraints on automobiles: Evaluating a trade policy. American Economic Review, 89(3), 400-431.  
-* Conlon, C., & Gortmaker, J. (2020). Best practices for differentiated products demand estimation with pyblp. The RAND Journal of Economics, 51(4), 1108-1161.  
-* Fukasawa, T. (2024). Fast and simple inner-loop algorithms of static/dynamic BLP estimations. arXiv preprint arXiv:2404.04494.  
-* Nevo, A. (2001). Measuring market power in the ready-to-eat cereal industry. Econometrica, 69(2), 307-342.
+* Aguirregabiria, V., & Mira, P. (2007). Sequential estimation of dynamic discrete games. Econometrica, 75(1), 1-53.
+
+* Dearing, A., & Blevins, J. R. (2024). Efficient and convergent sequential pseudo-likelihood estimation of dynamic discrete games. Review of Economic Studies, rdae050.
+
+* Fukasawa, T. (2024). Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm. arXiv preprint arXiv:XXXX. 
+
