@@ -94,7 +94,7 @@ run_nfxp_spec=0;
             difference_2epl_table=[[mean(log10_difference_2epl_krylov);max(log10_difference_2epl_krylov)],...
                 [mean(log10_difference_2epl_JF);max(log10_difference_2epl_JF)]];
 
-            difference_3epl_JF=abs(bmat_1epl_JF-bmat_3epl_analytical);
+            difference_3epl_JF=abs(bmat_3epl_JF-bmat_3epl_analytical);
             difference_3epl_krylov=abs(bmat_3epl_krylov-bmat_3epl_analytical);
             log10_difference_3epl_krylov=log10(difference_3epl_krylov(:));
             log10_difference_3epl_JF=log10(difference_3epl_JF(:));
