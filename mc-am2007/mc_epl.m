@@ -483,7 +483,9 @@ for draw = 1:nrepli
       fprintf('-----------------------------------------------------------------------------------------\n');
       fprintf('         (b.%d)   NPL Algorithm: %s\n', r, start_name{r});
       [ theta_seq{r}, varb, pnpl, start_v1npl{r}, vcnpl, start_ll(r), start_iter(r), start_err(r), start_times{r} ] = ...
-          npldygam1(aobs, sobs, aobs_1, sval, ptrans, start_p{r}, disfact, miniter, maxiter_npl);
+          npldygam(aobs, sobs, aobs_1, sval, ptrans, start_p{r}, disfact, miniter, maxiter_npl);
+
+      start_theta1(:,r)=reshape(theta_seq{r}(1,:),[],1);%%%%%
   end
 
   max_llike = max(start_ll);
@@ -697,7 +699,7 @@ for draw = 1:nrepli
 
   fprintf('-----------------------------------------------------------------------------------------\n');
   fprintf('         (d.1)   NPL algorithm using true values as initial CCPs\n');
-  %[ b1npl, varb, pnpl, v1npl, vcnpl, iter ] = npldygam1(aobs, sobs, aobs_1, sval, ptrans, pequil, disfact, 1, 1);
+  %[ b1npl, varb, pnpl, v1npl, vcnpl, iter ] = npldygam(aobs, sobs, aobs_1, sval, ptrans, pequil, disfact, 1, 1);
   %btrue_npl(draw,:) = b1npl;
 
   fprintf('-----------------------------------------------------------------------------------------\n');

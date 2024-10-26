@@ -13,7 +13,7 @@ addpath('./spectral')
 addpath('./results')
 
 save_spec=0;
-nrepli = 100;%1000  % Number of Monte carlo replications
+nrepli = 100;%100;%1000  % Number of Monte carlo replications
 nplayer = 5;    %  Number of players
 
 selexper = 3;
@@ -21,7 +21,7 @@ k=0;
 nobs=1600;
 
 %% Comparison of EPL-analytical, EPL-krylov, and EPL-JF
-run_nfxp_spec=0;
+run_nfxp_spec=0;%%%
 
             %% Analytical (Jacobian-based)
             compute_jacobian_spec=1;%%%%%
