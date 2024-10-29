@@ -11,5 +11,5 @@ We can run all the numerical experiments shown in the paper by running mc_main.m
 
 * Dearing, A., & Blevins, J. R. (2024). Efficient and convergent sequential pseudo-likelihood estimation of dynamic discrete games. Review of Economic Studies, rdae050.
 
-* Fukasawa, T. (2024). Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm. arXiv preprint arXiv:XXXX. 
+* Fukasawa, T. (2024). Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm. arXiv preprint arXiv:2410.20029. 
 
