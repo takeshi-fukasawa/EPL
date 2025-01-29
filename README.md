@@ -1,4 +1,4 @@
-# Replication code of "Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm" (Fukasawa, 2024)
+# Replication code of "Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm" (Fukasawa, 2025)
 
 This repository contains the replication code of the paper titled "Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm" by Takeshi Fukasawa, proposing a novel and simple procedure to compute the EPL estimator proposed by Dearing and Blevins (2024) without coding Jacobians of the equilibrium constraint. 
 
@@ -11,5 +11,4 @@ We can run all the numerical experiments shown in the paper by running mc_main.m
 
 * Dearing, A., & Blevins, J. R. (2024). Efficient and convergent sequential pseudo-likelihood estimation of dynamic discrete games. Review of Economic Studies, rdae050.
 
-* Fukasawa, T. (2024). Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm. arXiv preprint arXiv:2410.20029. 
-
+* Fukasawa, T. (2025). Jacobian-free Efficient Pseudo-Likelihood (EPL) Algorithm. Economics Letters, 112195.
